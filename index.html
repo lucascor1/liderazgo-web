@@ -1,120 +1,61 @@
-<!-- Website for Instituto Paraguayo del Liderazgo -->
-<!-- All text in Spanish, GitHub Pages ready -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instituto Paraguayo del Liderazgo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header, nav, footer {
-      background: #004080;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1em;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      padding: 2em;
-    }
-    section {
-      margin-bottom: 2em;
-    }
-    .team {
-      display: flex;
-      gap: 1em;
-      flex-wrap: wrap;
-    }
-    .member {
-      background: white;
-      padding: 1em;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      text-align: center;
-      flex: 1 1 200px;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Instituto Paraguayo del Liderazgo</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#coaching">Coaching</a>
-      <a href="#networking">Paraguay 2040</a>
-      <a href="#diplomado">Diplomado</a>
-      <a href="#nosotros">Sobre Nosotros</a>
-    </nav>
+  <header class="hero">
+    <img src="assets/logo.svg" alt="IPL Logo" class="logo">
+    <div class="hero-text">
+      <h1>Instituto Paraguayo del Liderazgo</h1>
+      <p>Impulsando a los líderes del Paraguay</p>
+    </div>
   </header>
 
+  <nav>
+    <a href="#coaching">Coaching</a>
+    <a href="#networking">Paraguay 2040</a>
+    <a href="#diplomado">Diplomado</a>
+    <a href="#nosotros">Sobre Nosotros</a>
+  </nav>
+
   <main>
-    <section id="inicio">
-      <h2>Bienvenidos</h2>
-      <p>Somos el Instituto Paraguayo del Liderazgo, una iniciativa joven con el propósito de empoderar a los futuros líderes de Paraguay a través de coaching, networking, y formación estratégica.</p>
+    <section id="coaching" class="teaser">
+      <img src="assets/stock_coaching.jpg" alt="Coaching">
+      <div>
+        <h2>Coaching</h2>
+        <p>Descubrí cómo podemos ayudarte a desarrollar tu carrera profesional.</p>
+        <a href="coaching.html" class="button">Más información</a>
+      </div>
     </section>
 
-    <section id="coaching">
-      <h2>Coaching</h2>
-      <p>Ofrecemos coaching de carrera personalizado para jóvenes que buscan crecer profesionalmente. Nuestro objetivo es ayudarte a tomar decisiones conscientes, alinear tus valores con tus metas, y encontrar tu camino.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5y8o9-NJAesEWCOTE5ZnI0gxg0aUafyV_MvDSLAt2-x2gsw/viewform?embedded=true">Cargando…</iframe>
+    <section id="networking" class="teaser">
+      <img src="assets/stock_networking.jpg" alt="Networking">
+      <div>
+        <h2>Paraguay 2040</h2>
+        <p>Unite a nuestra red de jóvenes comprometidos con el futuro del país.</p>
+        <a href="paraguay2040.html" class="button">Descubrí más</a>
+      </div>
     </section>
 
-    <section id="networking">
-      <h2>Red Paraguay 2040</h2>
-      <p>¿Te gustaría ser parte de nuestra red de jóvenes profesionales Paraguay 2040? Organizamos eventos e intercambiamos ideas sobre cómo hacer crecer nuestras organizaciones, nuestros negocios y nuestro país.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHdHRFhzlZtfwpVdEPNjWAyuMPNKvU0Rl3gVadaGheGwIGZg/viewform?embedded=true">Cargando…</iframe>
+    <section id="diplomado" class="teaser">
+      <img src="assets/stock_diplomado.jpg" alt="Diplomado">
+      <div>
+        <h2>Diplomado</h2>
+        <p>Formate estratégicamente a través de nuestro programa de formación anual.</p>
+        <a href="diplomado.html" class="button">Conocé el programa</a>
+      </div>
     </section>
 
-    <section id="diplomado">
-      <h2>Diplomado</h2>
-      <p>El Instituto ha creado, junto con la Universidad Evangélica del Paraguay, el Diplomado en Pensamiento Estratégico. Esta formación se imparte anualmente en la universidad y está diseñada para fortalecer la capacidad estratégica de los jóvenes líderes paraguayos.</p>
-      <p><strong>Si estás interesado, por favor contactá directamente con la Universidad Evangélica del Paraguay.</strong></p>
-    </section>
-
-    <section id="nosotros">
-      <h2>Sobre Nosotros</h2>
-      <p>Somos un equipo de jóvenes profesionales paraguayos con el deseo de compartir nuestras experiencias y nuestros aprendizajes. Nos apasiona ver crecer a nuestros jóvenes, y así también a nuestro país.</p>
-
-      <h3>Nuestro equipo</h3>
-      <div class="team">
-        <div class="member">
-          <img src="https://via.placeholder.com/100" alt="Foto" />
-          <h4>Nombre 1</h4>
-          <p>Cargo / Profesión</p>
-        </div>
-        <div class="member">
-          <img src="https://via.placeholder.com/100" alt="Foto" />
-          <h4>Nombre 2</h4>
-          <p>Cargo / Profesión</p>
-        </div>
-        <div class="member">
-          <img src="https://via.placeholder.com/100" alt="Foto" />
-          <h4>Nombre 3</h4>
-          <p>Cargo / Profesión</p>
-        </div>
-        <div class="member">
-          <img src="https://via.placeholder.com/100" alt="Foto" />
-          <h4>Nombre 4</h4>
-          <p>Cargo / Profesión</p>
-        </div>
+    <section id="nosotros" class="teaser">
+      <img src="assets/stock_team.jpg" alt="Sobre Nosotros">
+      <div>
+        <h2>Sobre Nosotros</h2>
+        <p>Conocé la misión del instituto y al equipo que lo impulsa.</p>
+        <a href="nosotros.html" class="button">Leer más</a>
       </div>
     </section>
   </main>
